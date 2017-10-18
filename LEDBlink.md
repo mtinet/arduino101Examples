@@ -6,7 +6,7 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 
 ![](http://blog.cavedu.com/wp-content/uploads/2016/04/2016-01-26-14.50.47-1024x768-1024x768.jpg)
 
-[동영상](https://youtu.be/WSktBhO94Ug)
+[![](https://github.com/mtinet/genuino101Examples/blob/master/image/test.png?raw=true)](https://youtu.be/WSktBhO94Ug)
 
 Arduino 101 is the latest dev board under cooperation between Arduino.cc and Intel, which is named as Genuino 101 out side USA.
 
