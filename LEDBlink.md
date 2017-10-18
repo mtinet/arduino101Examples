@@ -4,9 +4,9 @@
 
 MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두이노101을 사용합니다. 여러분은 이 키트를 사용해 다양한 종류의 상호작용 프로젝트를 개발할 수 있습니다. 여러분은 이것을 사용하기 전에 BLE콤포넌트(.aix) 확장팩을 임포트해야만합니다. 실제 앱 실행장면의 스크린샷은 아래를 참고하세요.  
 
-![](https://github.com/mtinet/genuino101Examples/blob/master/image/2016-01-26-14.50.47-1024x768-1024x768.jpg?raw=true)
+![](https://github.com/mtinet/genuino101Examples/blob/master/image/1.jpg?raw=true)
 
-[![](https://github.com/mtinet/genuino101Examples/blob/master/image/test.png?raw=true)](https://youtu.be/WSktBhO94Ug)(동영상을 보려면 사진을 클릭하세요.)  
+[![](https://github.com/mtinet/genuino101Examples/blob/master/image/2.png?raw=true)](https://youtu.be/WSktBhO94Ug)(동영상을 보려면 사진을 클릭하세요.)  
 
 아두이노101은 Arduino.cc와 Intel 사이의 협업을 통해 만들어진 최신 장치 보드입니다. 미국 외에서는 Genuino101이라고 부릅니다.  
 
@@ -30,3 +30,7 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 3. TurnOffButton(Button) : 아두이노101에 "1"문자열을 보내기 위해 클릭합니다.  
 4. Button_Disconnect(Button) : 안드로이드폰과 아두이노101사이의 연결을 닫기 위해  
 5. *BluetoothLE(non visible) : BLE통신을 위한 콤포넌트, 여러분의 AI2 프로젝트에 BLE.aix파일을 임포트 하세요.  
+
+
+![](https://github.com/mtinet/genuino101Examples/blob/master/image/3.jpg?raw=true)
+
