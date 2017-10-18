@@ -87,27 +87,27 @@ The core of this sketch is that we use incom = EDStatus.value() to check what Ar
 
 ~~~
 while (central.connected()) {
-//Serial.println(LEDStatus.written());
-if (LEDStatus.written())
-{
+  //Serial.println(LEDStatus.written());
+  if (LEDStatus.written())
+  {
         incom = LEDStatus.value();
         Serial.print("incom ");
         Serial.println(incom);
-if (incom != last_incom)  //compare current value with last one
-{
-if (incom == 1)        //integer 1
-{
+    if (incom != last_incom)  //compare current value with last one
+    {
+      if (incom == 1)        //integer 1
+      {
             Serial.println("LED On");
-digitalWrite(LED, HIGH);
-}
-else
-{
+            digitalWrite(LED, HIGH);
+      }
+      else
+      {
             Serial.println("LED Off");
-digitalWrite(LED, LOW);
-}
-}
+            digitalWrite(LED, LOW);
+      }
+    }
         last_incom = incom;
-}
+  }
 }
 ~~~
 
