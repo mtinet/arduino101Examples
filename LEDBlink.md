@@ -67,13 +67,12 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 
 ![](https://github.com/mtinet/genuino101Examples/blob/master/image/6.png?raw=true)
 
-Arduino 101
+## Arduino 101
+이 스케치는 MIT 앱인벤터 팀에 의해 기여되었습니다. 아두이노101은 온보드 BLE 하드웨어를 가지고 있음을 주의하세요. 그러므로 여러분은 HC05와 같은 블루투스 모듈을 연결할 필요가 없습니다. 
 
-This sketch is contributed by MIT App Inventor team. Please notice that Arduino 101 has onboard BLE hardware, therefore you don't have to connect Bluetooth modules like HC05.
+스케치에는 두가지 BLE 오브젝트가 있습니다 : blePeripheral(아두이노101)과 bleCentral(안드로이드)입니다. blePeripheral은 service_uuid나 characteristic_uuid와 같은 아두이노101의 모든 속성을 구성하는데 사용됩니다. 그리고 bleCentral은 보드와 폰의 연결을 담당합니다. 
 
-There are two BLE objects in the sketch: blePeripheral(Arduino 101) and bleCentral(Android). blePeripheral is used to configure all the attributes of the Arduino 101, such as service_uuid and characteristic_uuid. And bleCentral is reponsible for the connection between the board and phone.
-
-service_uuid and characteristic_uuid are also specified in the sketch, they are ″19B10010-E8F2-537E-4F6C-D104768A1214″ and ″19B10011-E8F2-537E-4F6C-D104768A1214″,  which must be the same with the string you use in App Inventor, as below:
+service_uuid와 characteristic_uuid는 또한 스케치에서 지정됩니다. 그것은 ″19B10010-E8F2-537E-4F6C-D104768A1214″와 ″19B10011-E8F2-537E-4F6C-D104768A1214″이며, 아래와 같이 여러분이 앱 인벤터에서 사용한 문자열과 반드시 같아야 합니다.  
 
 
 ~~~
@@ -83,7 +82,7 @@ BLEService lightService("19B10010-E8F2-537E-4F6C-D104768A1214"); // BLE LED Serv
 BLEUnsignedCharCharacteristic switchCharacteristic("19B10011-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
 ~~~
 
-The core of this sketch is that we use incom = EDStatus.value() to check what Arduino 101 has received. Arduino 101 will light up #13 LED when it receive an integer 1; Otherwise (integer 0 in our case) it will keep the LED off.
+이 스케치의 핵심은 아두이노101이 받은 것을 확인하기 위해 우리는 incom = EDStatus.value()를 사용한다는 것입니다. 아두이노101은 정수 "1"을 받았을 때 13번 핀의 LED를 켤 것입니다. 그렇지 않으면(우리의 경우 정수 "0") LED가 꺼진 상태를 유지할 것입니다. 
 
 ~~~
 while (central.connected()) {
