@@ -58,5 +58,28 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 
 “19B10010-E8F2-537E-4F6C-D104768A1214″라는 service_uuid와 “19B10011-E8F2-537E-4F6C-D104768A1214″라는 characteristic_uuid를 사용해야하는 것을 주의하세요. 이것은 아두이노101의 BLE서비스를 의미합니다. 이 UUID쌍은 아두이노 스케치에 있는 것과 같아야만합니다.  
 
-여러분은 센서값, 구글 음성 인식기(Google Speech Recognizer), 슬라이더 등으로 트리거 이벤트를 바꿀 수 있습니다. 아두이노 스케치에서 더 많은 I/O인터페이스 케이스는 [[App Inventor IoT ] Lesson 4: 4-axis robotarm](http://www.appinventor.tw/ble_lesson4_robotarm)를 확인하세요.    
+여러분은 버튼 대신에 센서값, 구글 음성 인식기(Google Speech Recognizer), 슬라이더 등으로 트리거 이벤트를 바꿀 수 있습니다. 아두이노 스케치에서 더 많은 I/O인터페이스 케이스는 [[App Inventor IoT ] Lesson 4: 4-axis robotarm](http://www.appinventor.tw/ble_lesson4_robotarm)을 확인하세요.  
+
+![](https://github.com/mtinet/genuino101Examples/blob/master/image/5.png?raw=true)
+
+##### 4. 연결 해제
+여러분이 Button_Disconnect button(Button_Disconnect.Click event)을 눌렀을 때, 블루투스LE1 콤포넌트는 지정된 아두이노101과의 연결을 닫고, 모든 콤포넌트를 초기 상태로 세팅합니다. 여러분은 다시 아두이노101에 연결할 수 있습니다.  
+
+![](https://github.com/mtinet/genuino101Examples/blob/master/image/6.png?raw=true)
+
+Arduino 101
+
+This sketch is contributed by MIT App Inventor team. Please notice that Arduino 101 has onboard BLE hardware, therefore you don't have to connect Bluetooth modules like HC05.
+
+There are two BLE objects in the sketch: blePeripheral(Arduino 101) and bleCentral(Android). blePeripheral is used to configure all the attributes of the Arduino 101, such as service_uuid and characteristic_uuid. And bleCentral is reponsible for the connection between the board and phone.
+
+service_uuid and characteristic_uuid are also specified in the sketch, they are ″19B10010-E8F2-537E-4F6C-D104768A1214″ and ″19B10011-E8F2-537E-4F6C-D104768A1214″,  which must be the same with the string you use in App Inventor, as below:
+
+
+'''
+BLEService lightService("19B10010-E8F2-537E-4F6C-D104768A1214"); // BLE LED Service
+
+// BLE LED Switch Characteristic - custom 128-bit UUID, read and writable by central
+BLEUnsignedCharCharacteristic switchCharacteristic("19B10011-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
+'''
 
