@@ -1,4 +1,4 @@
-# genuino101Examples
+# Arduino101Examples
 
 Arduino101을 이용한 사물인터넷 구현 방법에 대한 안내  
 
