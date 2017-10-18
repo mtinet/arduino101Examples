@@ -76,10 +76,10 @@ There are two BLE objects in the sketch: blePeripheral(Arduino 101) and bleCentr
 service_uuid and characteristic_uuid are also specified in the sketch, they are ″19B10010-E8F2-537E-4F6C-D104768A1214″ and ″19B10011-E8F2-537E-4F6C-D104768A1214″,  which must be the same with the string you use in App Inventor, as below:
 
 
-'''
+~~~
 BLEService lightService("19B10010-E8F2-537E-4F6C-D104768A1214"); // BLE LED Service
 
 // BLE LED Switch Characteristic - custom 128-bit UUID, read and writable by central
 BLEUnsignedCharCharacteristic switchCharacteristic("19B10011-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
-'''
+~~~
 
