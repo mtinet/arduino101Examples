@@ -8,16 +8,14 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 
 [![](https://github.com/mtinet/genuino101Examples/blob/master/image/test.png?raw=true)](https://youtu.be/WSktBhO94Ug)
 
-Arduino 101 is the latest dev board under cooperation between Arduino.cc and Intel, which is named as Genuino 101 out side USA.
+아두이노101은 Arduino.cc와 Intel 사이의 협업을 통해 만들어진 최신 장치 보드이다. 미국 외에서는 Genuino101이라고 부른다.  
 
-More topics: 
+더 많은 토픽 :  
+[Make: $30 Gets You the Sensor-Packed, Curie-Powered Arduino 101](https://makezine.com/2015/10/16/30-gets-you-the-sensor-packed-curie-powered-arduino-101/)  
+[Arduino/Genuino 101 CurieBLE CallbackLED](https://www.arduino.cc/en/Tutorial/Genuino101CurieBLECallbackLED)  
 
-Make: $30 Gets You the Sensor-Packed, Curie-Powered Arduino 101
-Arduino/Genuino 101 CurieBLE CallbackLED
-Part List
+부품 리스트 :  
+1. 안드로이드 폰(BLE 내장 필요, 요즘 대부분의 안드로이드 폰은 걱정하지 않아도 됨)  
+2. 아두이노101  
+3. LED, 릴레이 모듈(옵션, 온보드 칩 LED를 바로 사용할 수 있음)  
 
-1. Android phone (Must have BLE hardware, but I think it's not a problem for most Android devices today).
-
-2. Arduino 101
-
-3. LED or Relay Module (optional, you can use onboard LED directly)
