@@ -185,3 +185,10 @@ void loop() {
   Serial.println(central.address());
 }
 ~~~
+
+
+## 관련 파일 다운로드  
+[BLE_Arduino101_blink.aia](https://github.com/mtinet/genuino101Examples/blob/master/LEDBlink/BLE_Arduino101_blink.aia)
+[BLE_Arduino101_blink.ino](https://github.com/mtinet/genuino101Examples/blob/master/LEDBlink/BLE_Arduino101_blink.ino)
+[BLE_Arduino101_blink_speech.aia](https://github.com/mtinet/genuino101Examples/blob/master/LEDBlink/BLE_Arduino101_blink_speech.aia)
+[edu.mit.appinventor.ble.BluetoothLE.aix](https://github.com/mtinet/genuino101Examples/blob/master/LEDBlink/edu.mit.appinventor.ble.BluetoothLE.aix)
