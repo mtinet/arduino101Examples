@@ -1,6 +1,7 @@
 # [앱 인벤터 IoT]
 ## 레슨 2 : 아두이노101 Fading(PWM)  
-출처 링크 : [http://www.appinventor.tw/ble_lesson2_pwm](http://www.appinventor.tw/ble_lesson2_pwm)  
+출처 링크 : [http://www.appinventor.tw/ble_lesson2_pwm](http://www.appinventor.tw/ble_lesson2_pwm)  
+번역 : 북악중학교 김보정선생님  
 
 이 문서는 아두이노 101의 BLE(Bluetooth Low Energy, Bluetooth 4.0)를 앱인벤터로 조작하는 구현하는 방법에 대한 문서입니다.  
 
