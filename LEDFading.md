@@ -1,5 +1,5 @@
 # [앱 인벤터 IoT]
-## 레슨 2 : 아두이노101 Fading(PWM)  
+## 레슨 2 : 아두이노101 BLE LED Fading(PWM)  
 출처 링크 : [http://www.appinventor.tw/ble_lesson2_pwm](http://www.appinventor.tw/ble_lesson2_pwm)  
 번역 : 북악중학교 김보정선생님  
 
