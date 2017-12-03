@@ -18,7 +18,8 @@
 
 
 ### Designer Page  
-Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더포인터의 위치를 BLE 컴포넌트를 통해 아두이노101보드에 보냅니다. 슬라이더 포인터의 위치는 또한 텍스트상자를 통해서도 보여집니다. 단, 해당예제를 실행할 때 사용하는 통신프로토콜이 다르기 때문에 기존의 블루투스클라이언트 컴포넌트를 사용해서는 아두이노와 통신할 수 없습니다. 
+Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더포인터의 위치를 BLE 컴포넌트를 통해 아두이노101보드에 보냅니다. 슬라이더 포인터의 위치는 또한 텍스트상자를 통해서도 보여집니다. 단, 해당예제를 실행할 때 사용하는 통신프로토콜이 다르기 때문에 기존의 블루투스클라이언트 컴포넌트를 사용해서는 아두이노와 통신할 수 없습니다.  
+
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/10.png?raw=true)  
 
 * BLE Extension을 Import하는 방법 : [BLE Extension Download](https://github.com/mtinet/arduino101Examples/blob/master/LEDBlink/edu.mit.appinventor.ble.BluetoothLE.aix) - 앱인벤터 열기 - Project - start new project - 왼쪽하단의 Extension 클릭 - Import Extension 클릭 - From my computer에서 파일선택 후 Import 클릭  
