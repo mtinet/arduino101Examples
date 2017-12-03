@@ -13,10 +13,13 @@
 아두이노101은 arduino.cc(NOT .org)와 인텔의 협업으로 만들어진 최종의 개발 보드입니다. 또한 미국 밖에서는 제누이노101으로 알려져있습니다.  
 
 ## App Inventor  
-기본적으로, 해당 예제는 [앱인벤터와 아두이노 : 레슨1. LED 깜빡임] 예제와 BLE컴포넌트를 사용한다는 점을 제외하고는 거의 같다. 해당 예제어스 우리는 아두이노101에 내장된 D9 LED의 밝기를 슬라이더를 통해 제어하고자 한다.  
+기본적으로, 해당 예제는 [앱인벤터와 아두이노 : 레슨1. LED 깜빡임] 예제와 BLE컴포넌트를 사용한다는 점을 제외하고는 거의 같다. 해당 예제에서 우리는 아두이노101의 D9번 핀에 연결된 LED의 밝기를 슬라이더를 통해 제어하고자 합니다.  
 
 ### Designer Page  
-Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더포인터의 위치를 BLE 컴포넌트를 통해 아두이노101보드에 보낸다. 슬라이더 포인터의 위치는 또한 텍스트상자를 통해서도 보여진다. 단, 해당예제를 실행할 때 사용하는 통신프로토콜이 다르기 때문에 기존의 블루투스클라이언트 컴포넌트를 사용해서는 아두이노와 통신할 수 없다.  
+Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더포인터의 위치를 BLE 컴포넌트를 통해 아두이노101보드에 보냅니다. 슬라이더 포인터의 위치는 또한 텍스트상자를 통해서도 보여집니다. 단, 해당예제를 실행할 때 사용하는 통신프로토콜이 다르기 때문에 기존의 블루투스클라이언트 컴포넌트를 사용해서는 아두이노와 통신할 수 없습니다. 
+![](https://github.com/mtinet/arduino101Examples/blob/master/image/10.png?raw=true)  
+
+* BLE Extension을 Import하는 방법 : [BLE Extension Download](https://github.com/mtinet/arduino101Examples/blob/master/LEDBlink/edu.mit.appinventor.ble.BluetoothLE.aix) - 앱인벤터 열기 - Project - start new project - 왼쪽하단의 Extension 클릭 - Import Extension 클릭 - From my computer에서 파일선택 후 Import 클릭  
 
 ### Blocks  
 
