@@ -5,13 +5,12 @@
 
 여기에서 연재되고 있는 레슨들은 다양한 방법으로 앱인벤터와 아두이노 101(BLE)가 상호작용 할 수 있는 방법을 설명해줍니다. 단, 여러분이 이 기능을 사용하기 위해서 [반드시 BLE컴포넌트를 확장자로 Import](http://appinventor.mit.edu/extensions/)시켜야합니다.  
 
-
 실제 앱의 디자인, 회로도, 구동영상은 다음과 같습니다.  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/8.png?raw=true)  
-
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/16.png?raw=true)  
+[![](https://github.com/mtinet/arduino101Examples/blob/master/image/9.png?raw=true)](https://youtu.be/ihMyDoxapBQ)  
 
-[![](https://github.com/mtinet/arduino101Examples/blob/master/image/9.png?raw=true)](https://youtu.be/ihMyDoxapBQ)  
+아두이노101은 arduino.cc(NOT .org)와 인텔의 협업으로 만들어진 최종의 개발 보드입니다. 또한 미국 밖에서는 제누이노101으로 알려져있습니다.  
 
 ## App Inventor  
 기본적으로, 해당 예제는 [앱인벤터와 아두이노 : 레슨1. LED 깜빡임] 예제와 BLE컴포넌트를 사용한다는 점을 제외하고는 거의 같다. 해당 예제어스 우리는 아두이노101에 내장된 D9 LED의 밝기를 슬라이더를 통해 제어하고자 한다.  
