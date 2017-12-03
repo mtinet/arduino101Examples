@@ -3,7 +3,7 @@
 출처 링크 : [http://www.appinventor.tw/ble_lesson2_pwm](http://www.appinventor.tw/ble_lesson2_pwm)  
 번역 : 북악중학교 김보정선생님  
 
-이 문서는 아두이노 101의 BLE(Bluetooth Low Energy, Bluetooth 4.0)를 앱인벤터로 조작하는 구현하는 방법에 대한 문서입니다.  
+이 문서는 아두이노 101의 BLE(Bluetooth Low Energy, Bluetooth 4.0)를 앱인벤터로 조작하는 것을 구현하는 방법에 대한 문서입니다.  
 
 여기에서 연재되고 있는 레슨들은 다양한 방법으로 앱인벤터와 아두이노 101(BLE)가 상호작용 할 수 있는 방법을 설명해줍니다. 단, 여러분이 이 기능을 사용하기 위해서 [반드시 BLE컴포넌트를 확장자로 Import](http://appinventor.mit.edu/extensions/)시켜야합니다.  
 
