@@ -25,18 +25,19 @@ Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더�
 
 
 ### Blocks  
-##### 초기화 및 연결  
+##### 1. 초기화 및 연결  
 초기화면에서 BluetoothLE1을 이용하여 사용가능한 디바이스를 검색합니다. (아두이노101이 전원이 연결되어 준비되어 있다면 감지될 것입니다.)  
 
-다음으로, ConnectButton.Click창 안의 ConnectButton은 특정한 장치에 연결하기 위해 BlutoothLE1을 선택합니다. 사용하고 있는 아두이노101의 블루투스의 맥주소를 입력합니다.(98:04- ...) 맥주소 문자열을 여러분이 사용하고 있는 아두이노101의 것으로 수정합니다.  
+다음으로, ConnectButton.Click창 안의 ConnectButton은 특정한 장치에 연결하기 위해 BlutoothLE1을 선택합니다. 사용하고 있는 아두이노101의 블루투스의 맥주소를 입력합니다.(98:04- ...) 맥주소 문자열을 여러분이 사용하고 있는 아두이노101의 것으로 수정합니다.  
+
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/11.png?raw=true)  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/12.png?raw=true)  
 
-##### 연결 확인  
+##### 2. 연결 확인  
 연결이 되고 나면 BLuetootheLE!.Connected 창이 다음과 같이 호출될 것입니다.  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/13.png?raw=true)  
 
-##### 연속전송신호  
+##### 3. 연속전송신호  
 Clock을 이용합니다. Timer는 다음 두 작업을 매 0.1초마다 완성하기 위해 명령을 내립니다.  
 
  ⦁TextBox에서 슬라이더의 포인터 위치를 표시합니다.  
@@ -44,7 +45,7 @@ Clock을 이용합니다. Timer는 다음 두 작업을 매 0.1초마다 완성�
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/14.png?raw=true)  
 
 
-##### 연결 해제  
+##### 4. 연결 해제  
 Button_Disconnect.Click window의 Button_Disconnect 버튼을 누르면, BluetoothLE1컴포넌트가 기기에서 연결해제됩니다.  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/15.png?raw=true)  
 
