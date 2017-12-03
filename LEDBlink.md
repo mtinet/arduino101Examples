@@ -1,5 +1,5 @@
 # [앱 인벤터 IoT]  
-## 레슨 1 : 아두이노101 Blink  
+## 레슨 1 : 아두이노101 BLE Blink  
 출처 링크 : [http://www.appinventor.tw/ble_lesson1_blink](http://www.appinventor.tw/ble_lesson1_blink)  
 번역 : 영등포고등학교 김주현선생님  
 
