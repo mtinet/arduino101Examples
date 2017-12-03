@@ -1,6 +1,6 @@
 # [앱 인벤터 IoT]  
 ## 레슨 1 : 아두이노101 Blink  
-[출처링크](http://www.appinventor.tw/ble_lesson1_blink)  
+출처링크 : [http://www.appinventor.tw/ble_lesson1_blink](http://www.appinventor.tw/ble_lesson1_blink)  
 
 이 토픽은 MIT 앱인벤터 IoT(사물인터넷) 튜토리얼의 첫번째 레슨입니다. 우리는 앱인벤터의 블루투스LE(블루투스 4.0 로우 에너지, BLE) 콤포넌트를 통해 아두이노101의 LED Blink를 제어하기 위해 여러분의 안드로이드폰을 사용하는 방법을 안내하려고 합니다.  
 
