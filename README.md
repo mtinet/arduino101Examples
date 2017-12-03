@@ -2,8 +2,8 @@
 
 Arduino101을 이용한 사물인터넷 구현 방법에 대한 안내  
 
-## [Lesson 1. Arduino101 Blink](https://mtinet.github.io/arduino101Examples/LEDBlink) 
-## [Lesson 2. Arduino101 LED Fading(PWM)](https://mtinet.github.io/arduino101Examples/LEDFading)  
+## [Lesson 1. Arduino101 BLE Blink](https://mtinet.github.io/arduino101Examples/LEDBlink) 
+## [Lesson 2. Arduino101 BLE LED Fading(PWM)](https://mtinet.github.io/arduino101Examples/LEDFading)  
 
 
 ---
