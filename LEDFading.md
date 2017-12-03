@@ -6,7 +6,7 @@
 여기에서 연재되고 있는 레슨들은 다양한 방법으로 앱인벤터와 아두이노 101(BLE)가 상호작용 할 수 있는 방법을 설명해줍니다. 단, 여러분이 이 기능을 사용하기 위해서 [반드시 BLE컴포넌트를 확장자로 Import](http://appinventor.mit.edu/extensions/)시켜야합니다.  
 
 실제 앱의 디자인, 회로도, 구동영상은 다음과 같습니다.  
-![](https://github.com/mtinet/arduino101Examples/blob/master/image/8.png?raw=true)  
+![](https://github.com/mtinet/arduino101Examples/blob/master/image/8.png?raw=true)  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/16.png?raw=true)  
 [![](https://github.com/mtinet/arduino101Examples/blob/master/image/9.png?raw=true)](https://youtu.be/ihMyDoxapBQ)  
 
@@ -37,7 +37,8 @@ Block컴포넌트는 정기적으로 LED의 밝기를 제어하는 슬라이더�
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/13.png?raw=true)  
 
 ##### 연속전송신호  
-Clock을 이용합니다. Timer는 다음 두 작업을 매 0.1초마다 완성하기 위해 명령을 내립니다.   
+Clock을 이용합니다. Timer는 다음 두 작업을 매 0.1초마다 완성하기 위해 명령을 내립니다.  
+
  ⦁TextBox에서 슬라이더의 포인터 위치를 표시합니다.  
  ⦁BluetoothLE1.writeIntValue명령을 사용하여 포인터 위치를 전송하면, 아두이노101에서 이 정보는 analogWrite명령을 통해 LED의 밝기를 제어합니다. service_uuid칸에는 “19B10010-E8F2-537E-4F6C-D104768A1214″를 characteristic_uuid칸에는 “19B10011-E8F2-537E-4F6C-D104768A1214″를 입력하세요.아두이노 101은 이 파라메터를 BLE서비스에 사용합니다.  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/14.png?raw=true)  
