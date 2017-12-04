@@ -7,7 +7,9 @@ This topic is the third lesson of MIT App Inventor IoT (Internet of Things) tuto
 
 MIT App Inventor will use Arduino 101 as the core dev board of its IoT solutions, you can develop various kinds of interactive project with the kit (planning).  You must import BLE component(.aix) as an extension before using it. A screenshot of the actual app execution is shown below. Enjoy~
 
- 
+이 토픽은 MIT App Inventor IoT(Internet of Things) 튜토리얼의 세번째 레슨입니다. 여기서는 앱인벤터의 BluetoothLE(Bluetooth 4.0 Low Energy)콤포넌트를 이용해 여러분의 안드로이드폰으로 아두이노101의 아날로그핀(A0)의 값을 연속적으로 읽어들이는 방법에 대해 안내하려고 합니다.  
+
+MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 사용할 것입니다. 
 [![](https://github.com/mtinet/arduino101Examples/blob/master/image/17.png?raw=true)](https://youtu.be/uuapPq8GZYQ)  
 
 
