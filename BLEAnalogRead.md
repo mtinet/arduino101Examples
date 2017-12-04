@@ -3,10 +3,6 @@
 출처 링크 : [http://www.appinventor.tw/ble_analogread](http://www.appinventor.tw/ble_analogread)  
 번역 : 영등포고등학교 김주현선생님  
 
-This topic is the third lesson of MIT App Inventor IoT (Internet of Things) tutorials. We are going to introduce how to use your Android phone to continuously read Arduino 101's analog pin(A0) via App Inventor's BluetoothLE (Bluetooth 4.0 Low Energy)component.  
-
-MIT App Inventor will use Arduino 101 as the core dev board of its IoT solutions, you can develop various kinds of interactive project with the kit (planning).  You must import BLE component(.aix) as an extension before using it. A screenshot of the actual app execution is shown below. Enjoy~
-
 이 토픽은 MIT App Inventor IoT(Internet of Things) 튜토리얼의 세번째 레슨입니다. 여기서는 앱인벤터의 BluetoothLE(Bluetooth 4.0 Low Energy)콤포넌트를 이용해 여러분의 안드로이드폰으로 아두이노101의 아날로그핀(A0)의 값을 연속적으로 읽어들이는 방법에 대해 안내하려고 합니다.  
 
 MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 사용할 것입니다. 여러분은 이 키트(계획중)로 다양한 종류의 상호작용 프로젝트를 개발할 수 있습니다. 단, 여러분이 이 기능을 사용하기 위해서 [반드시 BLE컴포넌트를 확장자로 Import](http://appinventor.mit.edu/extensions/)시켜야합니다. 실제 앱 실행 스크린샷은 아래에 있습니다. 즐기세요~   
@@ -16,19 +12,16 @@ MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 
 
 아두이노101은 arduino.cc(NOT .org)와 인텔의 협업으로 만들어진 최종의 개발 보드입니다. 또한 미국 밖에서는 제누이노101으로 알려져있습니다.
 
-Arduino 101 is the latest dev board under cooperation between Arduino.cc and Intel, which is named as Genuino 101 out side USA.
+##### 더 많은 토픽들 :  
+* [Make: $30 Gets You the Sensor-Packed, Curie-Powered Arduino 101](https://makezine.com/2015/10/16/30-gets-you-the-sensor-packed-curie-powered-arduino-101/)  
+* [Arduino/Genuino 101 CurieBLE CallbackLED](https://www.arduino.cc/en/Tutorial/Genuino101CurieBLECallbackLED)  
 
-More topics: 
+##### 부품 목록 :  
+1. 안드로이드폰(반드시 BLE하드웨어를 내장하고 있어야 하지만, 요즘 대부분의 안드로이드장치는 이것이 문제가 되지는 않습니다.)  
+2. Arduino 101  
+3. 포텐시오미터(또는 여러분이 가지고 있는 다른 아날로그 입력 장치). 예제를 위해 포텐시오미터를 구하여, 가운데 핀(센싱핀)을 아두이노101의 A0 아날로그 입력 핀에 연결하세요. 다른 두 핀은 아두이노101의 5V, GND핀에 연결합니다. 
 
-Make: $30 Gets You the Sensor-Packed, Curie-Powered Arduino 101
-Arduino/Genuino 101 CurieBLE CallbackLED
-Part List
-
-1. Android phone (Must have BLE hardware, but I think it's not a problem for most Android devices today).
-
-2. Arduino 101
-
-3. Potentiometer (or other similar analog input component you have). Take potentiometer for example, please connect the central pin to Arduino 101's A0 analog pin. Other two pins are connected to Arduino 101's 5V and GND pins. Please note that potentiometer is a non-polarity components therefore the difference you connect the right-hand side pin to Arduino 101's 5V or GND pin is that you get the readings increasing/decreasing when you turn the knob CW. 
+Potentiometer (or other similar analog input component you have). Take potentiometer for example, please connect the central pin to Arduino 101's A0 analog pin. Other two pins are connected to Arduino 101's 5V and GND pins. Please note that potentiometer is a non-polarity components therefore the difference you connect the right-hand side pin to Arduino 101's 5V or GND pin is that you get the readings increasing/decreasing when you turn the knob CW. 
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/18.png?raw=true)
 
