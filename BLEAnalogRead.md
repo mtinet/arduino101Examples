@@ -35,9 +35,10 @@ MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/19.png?raw=true)  
 
 
-#### How to play:
+#### 사용 방법 :
+간단하게 말해서, 이 프로젝트는 여러분의 아두이노101에 직접적으로 연결합니다. 이는 블루투스의 맥주소가 코드에 이미 지정되어 있음을 의미합니다. 만약 여러분의 앱이 몇몇의 서로 다른 장치에 연결해야 한다면, 이 장치들을 먼저 페어링하고 앱인벤터의 ListPicker 콤포넌트를 이용해 선택하는 것이 더 나은 해결책이라고 생각합니다.  
 
-For simplicity, this project connect to your Arduino 101 directly, which means the Bluetooth address is assigned in the code. If your app has to connect from several devices, I think pairing with these devices first and pick them by ListPicker component in App Inventor is a better solution.
+여러분의 아두이노101과 안드로이드폰을 페어링(연결)하는 방법 : 
 
 How to pair your Arduino 101 and Andorid phone: First you must pair the Bluetooth module with your Android phone. After you connect all the hardware, you can see that the Bluetooth module's red LED is flashing, means ready for connecting. Then please open your Android phone's Bluetooth setting page (which should under Settings... , differs on each phone), click the name of your module (something like HC-05). Please enter 1234 (or 0000) when there is a prompt asking the paring key. Done~
 
