@@ -9,7 +9,7 @@ MIT 앱인벤터는 사물인터넷 솔루션의 핵심 장치보드로 아두�
 
 ![](https://github.com/mtinet/genuino101Examples/blob/master/image/1.jpg?raw=true)
 
-[![](https://github.com/mtinet/genuino101Examples/blob/master/image/2.png?raw=true)](https://youtu.be/WSktBhO94Ug)
+[![](https://github.com/mtinet/genuino101Examples/blob/master/image/2.png?raw=true)](https://youtu.be/WSktBhO94Ug)  
 (동영상을 보려면 사진을 클릭하세요.)  
 
 아두이노101은 Arduino.cc와 Intel 사이의 협업을 통해 만들어진 최신 장치 보드입니다. 미국 외에서는 Genuino101이라고 부릅니다.  
