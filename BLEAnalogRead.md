@@ -49,7 +49,9 @@ Please click the [Disconnect] button when you don't want to play anymore, this w
 
 ### Blocks  
 ##### 1. 초기화 및 연결  
-While initializing(Screen1.Initializing event), BluetoothLE1 component will scan for avalible devices, which means your Arduino 101 should be ready by then. 
+Screen1.Initializing event에 의해 초기화되고 있는 동안에 BluetoothLE1콤포넌트는 사용가능한 장치를 스캔하므로, 여러분의 아두이노101이 준비되어 있어야 합니다.
+
+여러분이 Button_Connect.Click event의 ConnectButton을 클릭하면, 
 
 When you click the ConnectButton (Button_Connect.Click event),  BluetoothLE1 component will try to connect the specified device, we put our Arduino 101's bluetooth address here (98:4F…), please modify this string according to your Arduino 101's.
 
