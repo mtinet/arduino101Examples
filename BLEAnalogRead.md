@@ -19,17 +19,16 @@ MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 
 ##### 부품 목록 :  
 1. 안드로이드폰(반드시 BLE하드웨어를 내장하고 있어야 하지만, 요즘 대부분의 안드로이드장치는 이것이 문제가 되지는 않습니다.)  
 2. Arduino 101  
-3. 포텐시오미터(가변저항, 또는 여러분이 가지고 있는 다른 아날로그 입력 장치). 예제를 위해 포텐시오미터를 구하여, 가운데 핀(센싱핀)을 아두이노101의 A0 아날로그 입력 핀에 연결하세요. 다른 두 핀은 아두이노101의 5V, GND핀에 연결합니다. 포텐시오미터는 극성이없으므로여러분이 오른편으로 아두이노101 5V를 연결하거나 GND를연결했을때발생하는차이점은 
-
-Potentiometer (or other similar analog input component you have). Take potentiometer for example, please connect the central pin to Arduino 101's A0 analog pin. Other two pins are connected to Arduino 101's 5V and GND pins. Please note that potentiometer is a non-polarity components therefore the difference you connect the right-hand side pin to Arduino 101's 5V or GND pin is that you get the readings increasing/decreasing when you turn the knob CW. 
+3. 포텐시오미터(가변저항, 또는 여러분이 가지고 있는 다른 아날로그 입력 장치). 예제를 위해 포텐시오미터를 구하여, 가운데 핀(센싱핀)을 아두이노101의 A0 아날로그 입력 핀에 연결하세요. 다른 두 핀은 아두이노101의 5V, GND핀에 연결합니다. 포텐시오미터는 극성이 없으므로 여러분이 오른쪽의 핀에 아두이노101의 5V를 연결하거나 GND를 연결했을 때 발생하는 차이점은 노브를 시계방향으로 돌렸을 때 읽어들이는 값이 증가하거나/감소하는 것 뿐입니다.
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/18.png?raw=true)
 
-## App Inventor  
-This example will continuously reading Arduino'101 analog A0 pin, and update Label and Slider accordingly.
+## App Inventor  
+이 예제는 아두이노101의 A0핀을 연속적으로 읽을것이며, 앱인벤터로 만든 레이블과 슬라이더도 따라서 업데이트 됩니다.  
 
 
-### Designer Page  
+### Designer Page  
+이 예제는 3개의 Clock콤포넌트를 사용합니다. 
 This example had used 3 Clock components, and their TimerInterval are found after several tests, you may need to adjust them according to the real situation. Since different protocol, you can not use old BluetoothClient component to talk with Arduino 101.
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/19.png?raw=true)  
