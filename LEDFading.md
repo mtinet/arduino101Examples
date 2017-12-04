@@ -11,6 +11,7 @@
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/8.png?raw=true)  
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/16.png?raw=true)  
 [![](https://github.com/mtinet/arduino101Examples/blob/master/image/9.png?raw=true)](https://youtu.be/ihMyDoxapBQ)  
+(동영상을 보려면 사진을 클릭하세요.)  
 
 아두이노101은 arduino.cc(NOT .org)와 인텔의 협업으로 만들어진 최종의 개발 보드입니다. 또한 미국 밖에서는 제누이노101으로 알려져있습니다.  
 
