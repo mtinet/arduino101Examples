@@ -87,17 +87,17 @@ service_uuid and characteristic_uuid are also specified in the sketch as “19B1
 
 
 ##### 6. 연결 해제  
-When click Button_Disconnect, we will set disconnect varaible to true, which will trigger BluetoothLE.DisconnectWithAddress)in Clock1.Timer event (STEP3).  
+Button_Disconnect를 클릭하면, 우리는 disconnect 변수를 true로 설정하게 될 것입니다. 이것은 Step3에있는 Clock1.Timer 이벤트의 BluetoothLE.DisconnectWithAddress를 동작시킵니다.  
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/25.png?raw=true)  
 
 
 
-## Complete Arduino 101 sketch
+## Complete Arduino 101 sketch  
+코드를 복사해서 아두이노101에 붙여 넣습니다. 아두이노101은 BLE가 있어 여러분이 HC-05같은 블루투스 모듈을 따로 연결할 필요가 없습니다.  \
 
-Copy the code and paste it onto Arduino 101. Please notice that Arduino 101 has onboard BLE hardware, therefore you don't need to connect other Bluetooth modules such as HC05.
+스케치에 지정된 “19B10011-E8F2-537E-4F6C-D104768A1214″와 같은 service_uuid와 characteristic_uuid 는 여러분이 앱인벤터에 사용한 문자열과 같아야합니다.  
 
-service_uuid and characteristic_uuid are also specified in the sketch as “19B10011-E8F2-537E-4F6C-D104768A1214″,  which must be the same with the string you use in App Inventor.
 
 ```
 #include <CurieBLE.h>
