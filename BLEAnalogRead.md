@@ -152,8 +152,9 @@ delay(50);
 ```
 
 ## 관련 파일 다운로드  
-[BLE_AnalogRead.aia](https://github.com/mtinet/arduino101Examples/blob/master/BLEAnalogRead/BLE_AnalogRead.aia)  
-[BLE_AnalogRead.ino](https://github.com/mtinet/arduino101Examples/blob/master/BLEAnalogRead/Ble_AnalogRead.ino)  
+[BLE_AnalogRead.aia](https://github.com/mtinet/arduino101Examples/blob/master/BLEAnalogRead/BLE_AnalogRead.aia)  
+[BLE_AnalogRead.ino](https://github.com/mtinet/arduino101Examples/blob/master/BLEAnalogRead/Ble_AnalogRead.ino)  
+
 
 
 
