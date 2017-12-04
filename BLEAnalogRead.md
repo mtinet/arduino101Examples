@@ -9,9 +9,12 @@ MIT App Inventor will use Arduino 101 as the core dev board of its IoT solutions
 
 이 토픽은 MIT App Inventor IoT(Internet of Things) 튜토리얼의 세번째 레슨입니다. 여기서는 앱인벤터의 BluetoothLE(Bluetooth 4.0 Low Energy)콤포넌트를 이용해 여러분의 안드로이드폰으로 아두이노101의 아날로그핀(A0)의 값을 연속적으로 읽어들이는 방법에 대해 안내하려고 합니다.  
 
-MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 사용할 것입니다. 
-[![](https://github.com/mtinet/arduino101Examples/blob/master/image/17.png?raw=true)](https://youtu.be/uuapPq8GZYQ)  
+MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 사용할 것입니다. 여러분은 이 키트(계획중)로 다양한 종류의 상호작용 프로젝트를 개발할 수 있습니다. 단, 여러분이 이 기능을 사용하기 위해서 [반드시 BLE컴포넌트를 확장자로 Import](http://appinventor.mit.edu/extensions/)시켜야합니다. 실제 앱 실행 스크린샷은 아래에 있습니다. 즐기세요~   
 
+[![](https://github.com/mtinet/arduino101Examples/blob/master/image/17.png?raw=true)](https://youtu.be/uuapPq8GZYQ)  
+(동영상을 보려면 사진을 클릭하세요.)  
+
+아두이노101은 arduino.cc(NOT .org)와 인텔의 협업으로 만들어진 최종의 개발 보드입니다. 또한 미국 밖에서는 제누이노101으로 알려져있습니다.
 
 Arduino 101 is the latest dev board under cooperation between Arduino.cc and Intel, which is named as Genuino 101 out side USA.
 
