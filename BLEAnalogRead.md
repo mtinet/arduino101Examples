@@ -31,7 +31,8 @@ MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 
 이 예제는 3개의 Clock콤포넌트를 사용합니다. 
 This example had used 3 Clock components, and their TimerInterval are found after several tests, you may need to adjust them according to the real situation. Since different protocol, you can not use old BluetoothClient component to talk with Arduino 101.
 
-![](https://github.com/mtinet/arduino101Examples/blob/master/image/19.png?raw=true)  
+![](https://github.com/mtinet/arduino101Examples/blob/master/image/18.jpg?raw=true)  
+
 
 #### How to play:
 
