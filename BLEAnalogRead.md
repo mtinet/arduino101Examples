@@ -70,14 +70,13 @@ The reason why combining two variables is because the range of Arduino's analog 
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/22.png?raw=true)  
 
-##### 4. Clock2 (called every 0.9 second): 
+##### 4. Clock2 (매 0.9초마다 호출됨): 
+Clock2는 자체 Timer event를 비활성화하고 Clock3을 매 0.9초마다 비활성화합니다. 그런 다음 disconnect 값에 따라 Timer event를 재활성화합니다
 
-Clock2 will disable the Timer event of itsefl and Clock3's every 0.9 second, then re-activate the timer event according to the value of disconnect .
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/23.png?raw=true)  
 
 
-##### 5. Clock3 (called every 0.005 second): control offset value and combine 2 data into real reading
-
+##### 5. Clock3 (매 0.005초마다 호출됨):  오프셋 값을 제어하고 2개의 데이터를 실제로 읽을 수 있도록 묶음  
 Clock3 will control how to read a integer from Arduino 101(BluetoothLE.ReadIntValue) according to status variable(0 or 1). Then assign the result of BluetoothLE.IntGattValue to data variable, if the value of data is within 128~256, then minus 128 from it before assigning to data2.
 
 However, if data is less than 128, them assign data to data1, we will combine it in Clock1.Timer event.
