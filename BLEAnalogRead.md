@@ -51,18 +51,17 @@ Please click the [Disconnect] button when you don't want to play anymore, this w
 ##### 1. 초기화 및 연결  
 Screen1.Initializing event에 의해 초기화되고 있는 동안에 BluetoothLE1콤포넌트는 사용가능한 장치를 스캔하므로, 여러분의 아두이노101이 준비되어 있어야 합니다.
 
-여러분이 Button_Connect.Click event의 ConnectButton을 클릭하면, 
-
-When you click the ConnectButton (Button_Connect.Click event),  BluetoothLE1 component will try to connect the specified device, we put our Arduino 101's bluetooth address here (98:4F…), please modify this string according to your Arduino 101's.
+여러분이 Button_Connect.Click event의 ConnectButton을 클릭하면, BluetoothLE1 콤포넌트는 지정된 장치에 연결을 시도 할 것입니다. 우리는 다음과 같은 우리의 아두이노101의 블루투스 맥주소(98:4F:....)를 넣습니다. 여러분의 아두이노101에 맞춰 이 문자열을 수정하세요.  
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/20.png?raw=true)  
 
 ##### 2. 연결 확인  
-BluetoothLE1.connected event will be called after the connection is established, we show a message on Screen's titlebar. It's quite useful for display some shor messages. 
+BluetoothLE1.connected event는 연결이 완료된 후에 호출됩니다. 우리는 스크린의 타이틀바에서 메시지를 보게됩니다. 이것은 메시지를 띄우는데 꽤 유용합니다.
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/21.png?raw=true)  
 
-##### 3. Clock1 (called every 1 second): read data sent back by Arduino 101  
+##### 3. Clock1 (매 1초마다 호출됨): 아두이노101이 보낸 데이터 읽기  
+
 Clock1 component can tell whether it had already connected with an Arduino 101 by disconnect variable value. If it is true, the App Inventor will further check if there was a connection, if connected then cut off connection(BluetoothLE.DisconnectWithAddress), otherwise then start scanning BLE devices (BluetoothLE.StartScanning).
 
 On the other hand, if disconnect variable value is false, then App Inventor will start to combine two variables (data1 and data2) to get real analog pin status. But first you need to enable the Timer event of Clock2 and Clock3.
