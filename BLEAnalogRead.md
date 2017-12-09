@@ -59,12 +59,11 @@ BluetoothLE1.connected event는 연결이 완료된 후에 호출됩니다. 우�
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/21.png?raw=true)  
 
 ##### 3. Clock1 (매 1초마다 호출됨): 아두이노101이 보낸 데이터 읽기  
+Clock1콤포넌트는 '연결해제 변수 값'에 의해 아두이노101과 이미 연결이 되어 있는지 알려줄 수 있습니다. 만약에 이것이 true라면, 앱인벤터는 연결이 되어있는지 다시 확인하고 만약 연결되어있다면 연결을 해제하고(BluetoothLE.DisconnectWithAddress), 그렇지 않으면 BLE장치의 스캔(BluetoothLE.StartScanning)을 시작합니다.
 
-Clock1 component can tell whether it had already connected with an Arduino 101 by disconnect variable value. If it is true, the App Inventor will further check if there was a connection, if connected then cut off connection(BluetoothLE.DisconnectWithAddress), otherwise then start scanning BLE devices (BluetoothLE.StartScanning).
+반면에 만약 '연결해제 변수 값'이 false라면, 앱인벤터는 실제 아날로그 핀 상태를 얻기 위해 두 변수(data1과 data2)를 결합할 것입니다. 하지만 우선 여러분은 Clock2와 Clock3의 Timer event를 사용할 수 있도록 할 필요가 있습니다.  
 
-On the other hand, if disconnect variable value is false, then App Inventor will start to combine two variables (data1 and data2) to get real analog pin status. But first you need to enable the Timer event of Clock2 and Clock3.
-
-The reason why combining two variables is because the range of Arduino's analog pin is 0~1023, so it need two integer variables(data2 and data1) to represent. Finally to show this combined value on Label and Slider, done~
+두 변수를 결합하는 이유는 아두이노의 아날로그 핀은 0~1023의 범위를 갖고있기 때문입니다. 따라서 이것은 두 정수형 변수(data1과 data2)가 필요합니다. 마지막으로 Lable과 Slider에서 이 결합된 값이 보이도록 합니다. 
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/22.png?raw=true)  
 
@@ -75,11 +74,11 @@ Clock2는 자체 Timer event를 비활성화하고 Clock3을 매 0.9초마다 �
 
 
 ##### 5. Clock3 (매 0.005초마다 호출됨):  오프셋 값을 제어하고 2개의 데이터를 실제로 읽을 수 있도록 묶음  
-Clock3 will control how to read a integer from Arduino 101(BluetoothLE.ReadIntValue) according to status variable(0 or 1). Then assign the result of BluetoothLE.IntGattValue to data variable, if the value of data is within 128~256, then minus 128 from it before assigning to data2.
+Clock3는 status변수(0 또는 1)에 따라서 아두이노101(BluetoothLE.ReadIntValue)으로부터 들어오는 정수를 읽는 방법을 제어합니다. 다음으로BluetoothLE.IntGattValue의 결과를 data변수에 대입합니다. 만약 데이터의 값이 128~256이라면, data2에 대입하기 전에 128을 빼줍니다.
 
-However, if data is less than 128, them assign data to data1, we will combine it in Clock1.Timer event.
+그렇지만 만약 data가 128보다 작다면 data를 data1에 대입합니다. 우리는 이것을 Clock1.Timer event에 결합 할 것입니다.  
 
-service_uuid and characteristic_uuid are also specified in the sketch as “19B10011-E8F2-537E-4F6C-D104768A1214″,  which must be the same with the string you use in App Inventor.  
+service_uuid와 characteristic_uuid는 마찬가지로 “19B10011-E8F2-537E-4F6C-D104768A1214″로 스케치에 지정됩니다. 이것은 앱인벤터에서 사용되는 문자열과 같아야합니다.  
 
 ![](https://github.com/mtinet/arduino101Examples/blob/master/image/24.png?raw=true)  
 
@@ -92,7 +91,7 @@ Button_Disconnect를 클릭하면, 우리는 disconnect 변수를 true로 설정
 
 
 ## Complete Arduino 101 sketch  
-코드를 복사해서 아두이노101에 붙여 넣습니다. 아두이노101은 BLE가 있어 여러분이 HC-05같은 블루투스 모듈을 따로 연결할 필요가 없습니다.  \
+코드를 복사해서 아두이노101에 붙여 넣습니다. 아두이노101은 BLE가 있어 여러분이 HC-05같은 블루투스 모듈을 따로 연결할 필요가 없습니다.  
 
 스케치에 지정된 “19B10011-E8F2-537E-4F6C-D104768A1214″와 같은 service_uuid와 characteristic_uuid 는 여러분이 앱인벤터에 사용한 문자열과 같아야합니다.  
 
