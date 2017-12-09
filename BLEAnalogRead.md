@@ -38,13 +38,11 @@ MIT 앱인벤터는 IoT 솔루션의 핵심 장치 보드로 아두이노101을 
 #### 사용 방법 :
 간단하게 말해서, 이 프로젝트는 여러분의 아두이노101에 직접적으로 연결합니다. 이는 블루투스의 맥주소가 코드에 이미 지정되어 있음을 의미합니다. 만약 여러분의 앱이 몇몇의 서로 다른 장치에 연결해야 한다면, 이 장치들을 먼저 페어링하고 앱인벤터의 ListPicker 콤포넌트를 이용해 선택하는 것이 더 나은 해결책이라고 생각합니다.  
 
-여러분의 아두이노101과 안드로이드폰을 페어링(연결)하는 방법 : 우선 여러분은 여러분의 안드로이드폰에 있는 블루투스 모듈을 페어링해야만 합니다. 다음으로 여러분은 모든 하드웨어(회로)를 연결합니다. 
+여러분의 아두이노101과 안드로이드폰을 페어링(연결)하는 방법 : 우선 여러분은 여러분의 안드로이드폰에 있는 블루투스 모듈을 페어링해야만 합니다. 다음으로 여러분은 모든 하드웨어(회로)를 연결합니다. 그러면 여러분은 블루투스 모듈의 붉은색 LED가 깜빡거리는 것을 볼 수 있습니다. 연결할 준비가 되었음을 의미합니다. 그 다음 여러분의 안드로이드폰의 블루투스 세팅 페이지를 여십시오.('설정'안에 있는... 각 폰마다 다릅니다.) 여러분의 모듈(HC-05등과 같은) 이름을 클릭하세요. 페어링 키를 물어보는 프롬프트가 뜨면 1234 또는 0000을 입력하세요.  
 
-How to pair your Arduino 101 and Andorid phone: First you must pair the Bluetooth module with your Android phone. After you connect all the hardware, you can see that the Bluetooth module's red LED is flashing, means ready for connecting. Then please open your Android phone's Bluetooth setting page (which should under Settings... , differs on each phone), click the name of your module (something like HC-05). Please enter 1234 (or 0000) when there is a prompt asking the paring key. Done~
+여러분이 앱을 열면 단 하나의 BTList가 있습니다. BTList를 클릭하세요. 그러면 여러분 폰에 페어링 된 모든 블루투스 장치가 보일 것입니다. 여러분의 모듈 이름을 클릭하세요. 연결에는 1~2초가 소요되며, 메인스크린으로 돌아갑니다. 여러분은 [LED Turn On]버튼을 누를 수 있게 되고 블루투스 모듈의 LED는 켜진 상태를 유지합니다. 버튼을누르면 아두이노의 LED가 켜지고 버튼의 문자가 [LED Turn Off]로 바뀝니다. 다시 버튼을 누르면 LED가 꺼지고, 버튼의 문자가 되돌아갑니다.
 
-There is only BTList which is enabled when you first open the app. Please click BTList, it will show all paired Bluetooth devices on your phone. Please click the name of your module, it should take 1~2 seconds to connect and back the main screen. You can see that the [LED Turn On] button is now clickable and the module's LED is keep lighted up. Just click the button, the LED on Arduino will light up and the button's text will become "LED Turn Off". Click again will turn off the LED and switch back the button text. 
-
-Please click the [Disconnect] button when you don't want to play anymore, this will disconnect the connection of your phone and bluetooth module and the module's LED will flashing again.
+여러분이 더 이상 사용하고 싶지 않을 때는 [Disconnect]버튼을 클릭하세요. 이것은 여러분의 폰과 블루투스 모듈의 연결을 해제하고, 모듈의 LED는 다시 깜빡거리게 됩니다.
 
 
 ### Blocks  
